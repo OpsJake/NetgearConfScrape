@@ -56,7 +56,7 @@ class Navigation(webdriver.Firefox):
         )
         menu_column_element_0.click()
 
-    def save_conf(self):
+    def switch_save_conf(self):
         save_conf_button = self.find_element(By.ID,
             "btn_Save"
         )

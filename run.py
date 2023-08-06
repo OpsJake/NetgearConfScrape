@@ -18,17 +18,16 @@ try:
             if "1" in selection:
                 print("Accessing router admin console.")
                 bot.router_login()
-                print("Lo")
-                # bot.access_router_backup_menu()
-                # bot.router_save_conf()
-                print("Login success!!")
+                bot.access_router_backup_menu()
+                bot.router_save_conf()
+                print("Config Saved")
                 continue
             elif "2" in selection:
                 print("Accessing switch admin console")
                 bot.switch_login()
                 bot.access_maintenance_tab()
                 bot.access_maintenance_menu()
-                bot.save_conf()
+                bot.switch_save_conf()
                 print("Config File Saved!!")
                 continue
             elif "3" in selection:
